@@ -176,7 +176,7 @@ class Trading():
                 # Stop loss
                 if last_price >= lossprice: 
             
-                    sello = Orders.sell_market(symbol, quantity)  
+                    sello = Orders.sell_market(symbol, quantity, orderId) #added orderId to be used in line 183  
    
                     print ('Stop-loss, sell market, %s' % (last_price))
         
